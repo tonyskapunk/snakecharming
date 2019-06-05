@@ -48,6 +48,8 @@ def main():
         sys.exit(1)
 
     # Print result to a file using "name_n"
+    print(fibonacci(n))
+    print(even_fibonacci(n))
     with open(f"{name}_{n}", "w") as f:
         f.write(str(even_fibonacci(n)))
 
